@@ -1,0 +1,41 @@
+[システム]
+<企業一覧>
+CREATE VIEW Company_List AS
+SELECT C.company_id, C.company_name,C.company_place,SUM(product_uriage) AS company_uriage
+FROM Company AS C
+LEFT OUTER JOIN Product_List AS PL ON C.company_id = PL.company_id
+GROUP BY C.company_id;
+
+
+<株式会社oooo　商品一覧>
+CREATE VIEW Product_List AS 
+SELECT P.company_id,P.product_id,P.product_name,P.product_explanation,
+P.category_id,P.product_created,P.product_updated,SUM(shosai_uriage) AS product_uriage
+FROM Products AS P
+LEFT OUTER JOIN Product_Shosai AS PS ON P.product_id = PS.product_id
+GROUP BY P.product_id;
+
+
+<xxxx 商品詳細>
+CREATE VIEW Product_Shosai AS SELECT P.company_id,PS.product_id,
+P.product_name,PS.size,PS.price,PS.stock,PS.min_stock,PS.product_size_created,
+PS.product_size_updated,PS.purchase_number,PS.purchase_number * PS.price AS shosai_uriage
+FROM Product_Sizes AS PS
+LEFT OUTER JOIN Products AS P ON P.product_id = PS.product_id;
+
+
+[企業]
+<在庫数管理><商品一覧>
+SELECT product_name,size,price,stock(在庫数管理のみ使用)
+FROM Product_Shosai;
+
+
+[ユーザー]
+<お気に入り商品一覧>
+{商品詳細viewと画像情報のみ結合したview}
+CREATE VIEW Product_Favorite_Image AS
+SELECT PS.product_name,PS.company_name,PS.price,PF.delete_flag,PI.product_image_path
+FROM Product_Shosai AS PS
+LEFT OUTER JOIN Product_Favorite AS PF ON 
+
+
