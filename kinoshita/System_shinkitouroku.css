@@ -1,0 +1,27 @@
+.kanrisya_mei {
+    text-align: center;
+   
+}
+
+.kengen {
+    text-align-last: center;
+    
+}
+
+.kanrisya_id {
+    text-align: center;
+}
+.kanrisya_password {
+    text-align: center;
+}
+.tuika {
+    text-align: right;
+    margin: 10px 450px;
+}
+
+input[name="System_kanrisya_tuika"] {
+    
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
