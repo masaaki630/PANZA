@@ -32,10 +32,23 @@ FROM Product_Shosai;
 
 [ユーザー]
 <お気に入り商品一覧>
-{商品詳細viewと画像情報のみ結合したview}
 CREATE VIEW Product_Favorite_Image AS
-SELECT PS.product_name,PS.company_name,PS.price,PF.delete_flag,PI.product_image_path
-FROM Product_Shosai AS PS
-LEFT OUTER JOIN Product_Favorite AS PF ON 
+SELECT P.product_name,C.company_name,P.product_explanation,PS.price,PF.delete_flag,PI.product_image_path
+FROM Product_Sizes AS PS
+LEFT OUTER JOIN Product_Favorite AS PF ON PF.product_size_id = PS.product_size_id
+LEFT OUTER JOIN Products AS P ON P.product_id = PS.product_id
+LEFT OUTER JOIN Product_Images AS PI ON PI.product_id = PS.product_id
+LEFT OUTER JOIN Company AS C ON P.company_id = C.company_id;
+
+<カート画面>
+CREATE VIEW User_Cart AS
+SELECT P.product_name,C.company_name,PS.price,PC.amount,PI.product_image_path
+FROM Product_Sizes AS PS
+LEFT OUTER JOIN Product_Cart AS PC ON PC.product_size_id = PS.product_size_id
+LEFT OUTER JOIN Products AS P ON P.product_id = PS.product_id
+LEFT OUTER JOIN Product_Images AS PI ON PI.product_id = PS.product_id
+LEFT OUTER JOIN Company AS C ON P.company_id = C.company_id;
+
+<>
 
 
