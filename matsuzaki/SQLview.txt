@@ -31,24 +31,55 @@ FROM Product_Shosai;
 
 
 [ユーザー]
-<お気に入り商品一覧>
+<お気に入り商品一覧>(未完)
 CREATE VIEW Product_Favorite_Image AS
-SELECT P.product_name,C.company_name,P.product_explanation,PS.price,PF.delete_flag,PI.product_image_path
+SELECT P.product_id,MI.member_id,P.product_name,C.company_name,PS.price,PF.delete_flag,PI.product_image_path
 FROM Product_Sizes AS PS
 LEFT OUTER JOIN Product_Favorite AS PF ON PF.product_size_id = PS.product_size_id
 LEFT OUTER JOIN Products AS P ON P.product_id = PS.product_id
 LEFT OUTER JOIN Product_Images AS PI ON PI.product_id = PS.product_id
-LEFT OUTER JOIN Company AS C ON P.company_id = C.company_id;
+LEFT OUTER JOIN Company AS C ON P.company_id = C.company_id
+LEFT OUTER JOIN Member_Informations AS MI ON PF.member_id = MI.member_id;
 
-<カート画面>
+(表示時)
+SELECT product_name,company_name,price,delete_flag,product_image_path
+FROM Product_Favorite_Image
+WHERE member_id = ?;
+
+<カート画面>(未完)
 CREATE VIEW User_Cart AS
-SELECT P.product_name,C.company_name,PS.price,PC.amount,PI.product_image_path
+SELECT P.product_id,MI.member_id,P.product_name,C.company_name,PS.price,PC.amount,PI.product_image_path
 FROM Product_Sizes AS PS
 LEFT OUTER JOIN Product_Cart AS PC ON PC.product_size_id = PS.product_size_id
 LEFT OUTER JOIN Products AS P ON P.product_id = PS.product_id
 LEFT OUTER JOIN Product_Images AS PI ON PI.product_id = PS.product_id
-LEFT OUTER JOIN Company AS C ON P.company_id = C.company_id;
+LEFT OUTER JOIN Company AS C ON P.company_id = C.company_id
+LEFT OUTER JOIN Member_Informations AS MI ON PC.member_id = MI.member_id;
 
-<>
+(表示時)
+SELECT product_name,company_name,price,amount,delete_flag,product_image_path
+FROM User_Cart
+WHERE member_id = ?;
+
+<メインページ>(未完)
+CREATE VIEW Main_Page AS
+SELECT P.product_id,MI.member_id,PH.history_id,P.product_name,C.company_name,PS.price,PF.delete_flag,PI.product_image_path
+FROM Product_Sizes AS PS
+LEFT OUTER JOIN Product_Favorite AS PF ON PS.product_size_id = PF.product_size_id
+LEFT OUTER JOIN Products AS P ON P.product_id = PS.product_id
+LEFT OUTER JOIN Product_Images AS PI ON PI.product_id = PS.product_id
+LEFT OUTER JOIN Company AS C ON P.company_id = C.company_id
+LEFT OUTER JOIN Product_Histories AS PH ON P.product_id = PH.product_id
+LEFT OUTER JOIN Member_Informations AS MI ON PF.member_id = MI.member_id;
 
 
+
+
+<商品画面>
+CREATE VIEW Product_Page AS
+SELECT P.product_id,C.company_id,P.product_name,C.company_name,PS.price,P.product_explanation,PF.delete_flag,PI.product_image_path
+FROM Product_Sizes AS PS
+LEFT OUTER JOIN Products AS P ON PS.product_id = P.product_id
+LEFT OUTER JOIN Company AS C ON P.company_id = C.company_id
+LEFT OUTER JOIN Product_Favorite AS PF ON PS.product_size_id = PF.product_size_id
+LEFT OUTER JOIN Product_Images AS PI ON PI.product_id = PS.product_id;
