@@ -31,20 +31,16 @@ FROM Product_Shosai;
 
 
 [ユーザー]
-<お気に入り商品一覧>(未完)
-CREATE VIEW Product_Favorite_Image AS
-SELECT P.product_id,MI.member_id,P.product_name,C.company_name,PS.price,PF.delete_flag,PI.product_image_path
-FROM Product_Sizes AS PS
-LEFT OUTER JOIN Product_Favorite AS PF ON PF.product_size_id = PS.product_size_id
-LEFT OUTER JOIN Products AS P ON P.product_id = PS.product_id
-LEFT OUTER JOIN Product_Images AS PI ON PI.product_id = PS.product_id
-LEFT OUTER JOIN Company AS C ON P.company_id = C.company_id
-LEFT OUTER JOIN Member_Informations AS MI ON PF.member_id = MI.member_id;
+<お気に入り商品(chatGPT)>
+CREATE VIEW Favorite_Products_View AS
+SELECT PF.product_favorite_id, MI.member_id, PS.product_size_id, PS.product_id, PS.price, P.product_name, PI.product_image_path, C.company_id, C.company_name
+FROM Product_Favorite PF
+JOIN Member_Information MI ON PF.member_id = MI.member_id
+JOIN Product_Sizes PS ON PF.product_size_id = PS.product_size_id
+JOIN Products P ON PS.product_id = P.product_id
+LEFT OUTER JOIN Product_Images PI ON P.product_id = PI.product_id
+JOIN Company C ON P.company_id = C.company_id;
 
-(表示時)
-SELECT product_name,company_name,price,delete_flag,product_image_path
-FROM Product_Favorite_Image
-WHERE member_id = ?;
 
 <カート画面>(未完)
 CREATE VIEW User_Cart AS
@@ -83,3 +79,4 @@ LEFT OUTER JOIN Products AS P ON PS.product_id = P.product_id
 LEFT OUTER JOIN Company AS C ON P.company_id = C.company_id
 LEFT OUTER JOIN Product_Favorite AS PF ON PS.product_size_id = PF.product_size_id
 LEFT OUTER JOIN Product_Images AS PI ON PI.product_id = PS.product_id;
+
