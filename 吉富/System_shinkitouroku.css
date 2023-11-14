@@ -9,8 +9,9 @@ input[name="System_kanrisya_mei"] {
     font-size: 25px;
     
 }
-table {
+table th {
     border:0;
+    
 }
 select  {
     border: 1px solid black;    
