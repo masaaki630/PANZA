@@ -1,42 +1,44 @@
 .kanrisya_mei {
-    text-align: center;
-    margin: 5px;
+    font-size: 25px;
    
 }
 input[name="System_kanrisya_mei"] {
     border: 1px solid black;
+    
 }
 
 .kengen {
-    text-align-last: center;
+    font-size: 25px;
     
 }
-select option {
-    border: 0;
-    outline: 1px solid #ccc;
-    outline-offset: -1px;
+select  {
+    border: 1px solid black;
+    
+    
 } 
 .kanrisya_id {
-    text-align: center;
-    margin: 5px;
+    font-size: 25px;
 }
 input[name="System_kanrisya_id"] {
     border: 1px solid black;
 }
 .kanrisya_password {
-    text-align: center;
+    font-size: 25px;
 }
+
 input[name="System_kanrisya_password"] {
     border: 1px solid black;
 }
-.tuika {
+.henko {
     text-align: right;
-    margin: 10px 450px;
+    font-size: 25px;
+    margin: 10px 280px;
 }
 
-input[name="System_kanrisya_tuika"] {
-    
-    background-color: black;
-    color: white;
+input[name="System_kanrisya_henko"] {
+    margin: 30px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
     padding: 10px 30px;
 }

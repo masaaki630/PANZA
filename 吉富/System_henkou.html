@@ -2,10 +2,9 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="destyle.css">
-    <link rel="stylesheet" href="System_company_all.css">
     <link rel="stylesheet" href="System_henkou.css">
+    <link rel="stylesheet" href="System_shohin_detail.css">
     <title>変更画面</title>
 </head>
 <body>
@@ -14,32 +13,35 @@
         <a href="logout.html" value="ログアウト">ログアウト</a>
     </div>
     <div class="container">
-        <div><a href=".html" value="戻る">戻る</a>
-            <a>sampul_text</a></div>
+        <div><a href=".html" value="戻る">戻る</a></div>
+        <form action="">
+    <table>
     <div class="kanrisya_mei">
-        <a>管理者名</a>
-        <input type="text" name="System_kanrisya_mei" v-model="System_kanrisya_mei" class="">
+        <tr><th><a>管理者名</a></th>
+        <th><input type="text" name="System_kanrisya_mei" v-model="System_kanrisya_mei" class=""></th></tr>
     </div>
     <div class="kengen">
-        <a>権限レベル</a>
-        <select name="kengen" id="kengen">
-            <option value="0">0</option>
-            <option value="1">1</option>
+        <tr><th><a>権限レベル</a></th>
+        <th><select name="kengen" id="kengen">
+            <option value="高">高</option>
+            <option value="低">低</option></th></tr>
             
         </select>
     </div>
     <div class="kanrisya_id">
-        <a>管理者ID</a>
-        <input type="text" name="System_kanrisya_id" v-model="System_kanrisya_id" class="">
+        <tr><th><a>管理者ID</a></th>
+        <th><input type="text" name="System_kanrisya_id" v-model="System_kanrisya_id" class=""></th></tr>
     </div>
     <div class="kanrisya_password">
-        <a>パスワード</a>
-        <input type="password" name="System_kanrisya_password" v-model="System_kanrisya_password" class="">
+        <tr><th><a>パスワード</a></th>
+        <th><input type="password" name="System_kanrisya_password" v-model="System_kanrisya_password" class=""></th></th></tr>
     </div>
+</table>
     <div class="henko">
     
         <input type="submit" name="System_kanrisya_henko" value="変更">
     </div>
+</form>
     <div class="footer">
         ABCC_SD2F_T1_Sep12
     </div>
