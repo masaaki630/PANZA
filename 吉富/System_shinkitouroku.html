@@ -10,32 +10,61 @@
 <body>
     <div class="header">
        管理画面
-        <a href="logout.html" value="ログアウト">ログアウト</a>
+        <a href="login.html" value="ログアウト">ログアウト</a>
     </div>
     <div class="container">
-    <div><a href=".html" value="戻る">戻る</a></div>
-    <from action="" method="post">
+        <div class="title-box">
+            <a href=".html" value="戻る">
+                ＜戻る
+            </a>
+    </div>
+    <hr>
+
+    <form action="" method="post">
         <table>
         <div class="kanrisya_mei">
-           <tr><th> <a>管理者名</a></th>
-            <th><input type="text" name="System_kanrisya_mei" v-model="System_kanrisya_mei" class=""></th></tr>
+            <tr>
+                <th>
+                    <a>管理者名</a>
+                </th>
+                <th>
+                    <input type="text" name="System_kanrisya_mei" v-model="System_kanrisya_mei" class="">
+                </th>
+            </tr>
         </div>
         <div class="kengen">
-            <tr><th> <a>権限レベル</a></th>
-            <th><select name="System_kengen" id="System_kengen">
-                <option value="高">高</option>
-                <option value="低">低</option></th></tr>
-                
-            </select>
+            <tr>
+                <th> 
+                    <a>権限レベル</a>
+                </th>
+                <th>
+                    <select name="System_kengen" id="System_kengen">
+                    <option value="高">高</option>
+                    <option value="低">低</option>
+                </th>
+            </tr>
+                </select>
         </div>
         <div class="kanrisya_id">
-            <tr><th><a>管理者ID</a></th>
-            <th><input type="text" name="System_kanrisya_id" v-model="System_kanrisya_id" class=""></th></tr>
+            <tr>
+                <th>
+                    <a>管理者ID</a>
+                </th>
+                <th>
+                    <input type="text" name="System_kanrisya_id" v-model="System_kanrisya_id" class="">
+                </th>
+            </tr>
         </div>
         <div class="kanrisya_password">
-            <tr><th><a>パスワード</a></th>
-            <th><input type="password" name="System_kanrisya_password" v-model="System_kanrisya_password" class="">
-        </div></th></tr>
+            <tr>
+                <th>
+                    <a>パスワード</a>
+                </th>
+                <th>
+                    <input type="password" name="System_kanrisya_password" v-model="System_kanrisya_password" class="">
+                </th>
+            </tr>
+        </div>
     </table>
         <div class="tuika">
             <input type="submit" name="System_kanrisya_tuika" value="追加">
