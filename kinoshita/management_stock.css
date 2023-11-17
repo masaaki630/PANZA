@@ -13,11 +13,20 @@
 .container{
     margin: 0px 5vw;
 }
-.file-upload{
-    margin-top: 1em;
+.upload{
+    text-align: center;
+    margin: 1.5em;
+    font-size: 20px;
+    vertical-align: middle;
 }
-.add{
- text-align: right;
+
+.shohin_kensaku{
+    outline: solid 1px #000000;
+}
+.update{
+    text-align: right;
+    margin-top: 1em;
+    margin-right:10vw;
 }
 
 .box{
@@ -35,16 +44,30 @@
 
 table{
     border-collapse: collapse;
-    margin: 20px 0px;
-    width: 100%;
+    margin: auto;
+    width: 80%;
 }
 
 td{
-    padding: 1em 2em;
+    padding: 1.5em 2em;
     vertical-align: middle;
     border: 1px solid black;
 }
 
+.count_cell{
+    width: 15vw;
+}
+
+.shohin{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stock_count{
+    display: flex;
+    justify-content: space-around;
+}
+  
 .footer{
     background-color: lightgrey;
     display: flex;

@@ -9,7 +9,7 @@
 <body>
     <header class="header">
         在庫数管理
-        <a href="management_dashuboard.html" value="戻る">＜　戻る</a>
+        <a href="management_dashboard.html" value="戻る">＜　戻る</a>
     </header>
     <main>
     <div class="container">
@@ -21,39 +21,51 @@
         <table>
             <tr>
                 <td>
-                    <span class="shohin_mei">商品名</span>
-                    <span class="price">￥10000</span>
+                    <div class="shohin">
+                        <span>商品名</span>
+                        <span>￥10000</span>
+                    </div>
                 </td>
-                <td>
-                    <span>1</span>
-                    <span class="increment">▲</span>
-                    <span class="decrement">▼</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span class="shohin">商品名</span>
-                    <span class="price">￥10000</span>
-                </td>
-                <td>
-                    <span>1</span>
-                    <span class="increment">▲</span>
-                    <span class="decrement">▼</span>
+                <td class="count_cell">
+                    <div class="stock_count">
+                        <span><input type="button" value="＋"></span>
+                        <span>1</span>
+                        <span><input type="button" value="－"></span>
+                    </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <span class="shohin">商品名</span>
-                    <span class="price">￥10000</span>
+                    <div class="shohin">
+                        <span>商品名</span>
+                        <span>￥10000</span>
+                    </div>
                 </td>
+                <td class="count_cell">
+                    <div class="stock_count">
+                        <span><input type="button" value="＋"></span>
+                        <span>1</span>
+                        <span><input type="button" value="－"></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
                 <td>
-                    <span>1</span>
-                    <span class="increment">▲</span>
-                    <span class="decrement">▼</span>
+                    <div class="shohin">
+                        <span>商品名</span>
+                        <span>￥10000</span>
+                    </div>
+                </td>
+                <td class="count_cell">
+                    <div class="stock_count">
+                        <span><input type="button" value="＋"></span>
+                        <span>1</span>
+                        <span><input type="button" value="－"></span>
+                    </div>
                 </td>
             </tr>
         </table> 
-        <div class="add">
+        <div class="update">
             <a href="">   
                 <div class="box">
                     <p>在庫数更新</p>
