@@ -1,0 +1,57 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 50px;
+}
+
+.container{
+    margin: 0px 5vw;
+}
+.file-upload{
+    margin-top: 1em;
+}
+.add{
+ text-align: right;
+}
+
+.box{
+    display: inline-block;
+    border: 1px solid #000000;
+    margin: 10px;
+    text-align: center;
+    color: #3e3e3b;
+    border-radius: 10px;
+    }
+    .box p{
+        margin: 15px;
+        font-weight: bold;
+    }
+
+table{
+    border-collapse: collapse;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+td{
+    padding: 1em 2em;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+.footer{
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1% 50px;
+    position: fixed;
+    bottom: 0;
+    /* left: 0; */
+    width: 100%;
+}
