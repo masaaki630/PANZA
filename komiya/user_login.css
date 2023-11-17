@@ -21,6 +21,10 @@
     margin: 15px;
 }
 
+.textbox{
+    border: 1px solid #000000;
+}
+
 .user_pass{
     display: flex;
     flex-direction: column;
@@ -47,4 +51,3 @@
         margin: 15px;
         font-weight: bold;
     }
-

@@ -1,0 +1,35 @@
+
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 50px;
+}
+
+
+.container{
+  margin: 0px 5vw;
+}
+
+.title-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  font-size: 20px;
+}
+
+footer{
+  background-color: lightgrey;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1% 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
