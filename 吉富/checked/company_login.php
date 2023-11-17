@@ -11,7 +11,7 @@
 
   $params=[
     'sys_file'=>$_SERVER['DOCUMENT_ROOT'].DirectorySettings::COMPONENTS_PATH.'system_message.php',
-    'title'=>'システム',
+    'title'=>'企業',
     'toController'=>'company_login_check.php',
     'login_id'=>'company_email',
     'password'=>'company_password',
