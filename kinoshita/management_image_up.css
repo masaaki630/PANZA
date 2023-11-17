@@ -13,12 +13,8 @@
 .container{
     margin: 0px 5vw;
 }
-
-.title-box{
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    font-size: 20px;
+.file-upload{
+    margin-top: 1em;
 }
 .add{
  text-align: right;
@@ -36,33 +32,15 @@
         margin: 15px;
         font-weight: bold;
     }
-    .box-new{
-        background-color: rgb(0, 200, 255);
-    }
-    .box-update{
-        background-color: rgb(4, 235, 4);
-    }
-
-    .box-delete{
-        background-color: rgb(255, 44, 44);
-    }
 
 table{
     border-collapse: collapse;
-    text-align: center;
     margin: 20px 0px;
-    width: 100%;
-}
-
-th{
-    border: 1px solid black;
-    padding: 0.5em 1em;
-    text-align: center;
+    width: 70%;
 }
 
 td{
-    border: 1px solid black;
-    padding: 0em 1em;
+    padding: 1em 2em;
     vertical-align: middle;
 }
 
