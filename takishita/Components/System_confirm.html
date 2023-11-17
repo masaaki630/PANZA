@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>システム{%title -echo%}確認画面</title>
+    <link rel="stylesheet" href="./Css/destyle.css">
+    <link rel="stylesheet" href="./Css/common.css">
+    <link rel="stylesheet" href="./Css/system_confirm.css">
+</head>
+<body>
+    <header>
+        <p>{%title -echo%}確認画面</p>
+        <a href="{%logout -echo%}">ログアウト</a>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="title-box">
+                <a href="{%pre_page -echo%}">戻る</a>
+            </div>
+            <hr>
+            <div class="check">
+                <p>以下の情報を{%title -echo%}します。<br>
+                よろしいですか?
+                </p>
+            </div>
+            <table>
+                <tr>
+                    <td>管理者名:</td><td>admin</td>
+                </tr>
+                <tr>
+                    <td>権限レベル：</td><td>高</td>
+                </tr>
+                <tr>
+                    <td>管理者ログインID</td><td>text</td>
+                </tr>
+            </table>
+            <a href="{%execute_link -echo%}" class="changeButton">
+                <div class="box">
+                    <p>{%%title -echo%}</p>
+                </div>
+            </a>
+        </div> 
+    </main>
+
+    <footer>
+        ABCC_SD2F_T1_Sep12
+    </footer>
+</body>
+</html>
