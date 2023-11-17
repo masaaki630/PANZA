@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Css/destyle.css">
+    <link rel="stylesheet" href="./Css/common.css">
+    <link rel="stylesheet" href="./Css/system_admin.css">
+    <title>{%title -echo%}画面</title>
+</head>
+<body>
+    <header>
+       <h1>{%title%}画面</h1>
+       <a href="{%logout -echo%}">ログアウト</a>
+    </header>
+
+    <div class="container">
+        <div class="title-box">
+            <a href="{%pre-page -echo%}">＜戻る</a>
+        </div>
+
+        <hr>
+
+        <form action="{%form_link -echo%}" method="post">
+            <table>
+                
+                <tr>
+                    <th>管理者名</th>
+                    <td>
+                        <input type="text" name="system_name" class="System_kanrisya_mei" value="{%system_name -echo%}">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <th>権限レベル</th>
+                    <td>
+                        <div class="arrow">
+                            <select name="admin_level" id="System_kengen">
+                                <option value="0">高</option>
+                                <option value="1">低</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>ログインID</th>
+                    <td>
+                        <input type="text" name="system_login_id" value="{%system_login_id%}">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>パスワード</th>
+                    <td>
+                        <input type="password" name="system_password">
+                    </td>
+                </tr>
+
+            </table>
+            <div class="submit">
+                <input type="submit" value="新規登録">
+            </div>
+        </from>
+    </div>
+
+    <footer>
+        <p>ABCC_SD2F_T1_Sep12</p>
+    </footer>
+
+</body>
+</html>

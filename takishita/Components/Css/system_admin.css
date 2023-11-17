@@ -1,0 +1,52 @@
+
+table{
+    margin: auto;
+}
+
+tr{
+    font-size: 25px;
+}
+
+th {
+    border: 0;
+    padding: 10px;
+    padding-right: 90px;
+    vertical-align: middle;
+}
+
+
+    input[type="text"],input[type="password"]{
+        border: 1px solid black;
+        padding: 10px;
+        margin: 25px;
+    }
+
+    input[type="submit"]{
+        padding: 10px 30px;
+        margin: 30px;
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+    }
+    
+    select  {
+        border: 1px solid black; 
+        padding: 10px 125px;
+        margin: 30px; 
+        background: #ffffff;
+        -moz-appearance: menulist;
+        -webkit-appearance: menulist;
+        appearance: menulist;
+    }
+    /*IE用*/
+    select::-ms-expand {
+        display: block;
+    }
+
+    .submit {
+        text-align: right;
+        font-size: 25px;
+        margin: 5px 200px;
+    }
+
+
