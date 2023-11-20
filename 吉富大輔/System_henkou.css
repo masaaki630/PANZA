@@ -1,0 +1,42 @@
+.kanrisya_mei {
+    text-align: center;
+    margin: 5px;
+   
+}
+input[name="System_kanrisya_mei"] {
+    border: 1px solid black;
+}
+
+.kengen {
+    text-align-last: center;
+    
+}
+select option {
+    border: 0;
+    outline: 1px solid #ccc;
+    outline-offset: -1px;
+} 
+.kanrisya_id {
+    text-align: center;
+    margin: 5px;
+}
+input[name="System_kanrisya_id"] {
+    border: 1px solid black;
+}
+.kanrisya_password {
+    text-align: center;
+}
+input[name="System_kanrisya_password"] {
+    border: 1px solid black;
+}
+.tuika {
+    text-align: right;
+    margin: 10px 450px;
+}
+
+input[name="System_kanrisya_tuika"] {
+    
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
