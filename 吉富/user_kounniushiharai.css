@@ -1,0 +1,43 @@
+
+.zyusyo {
+    margin: 10px 240px 10px 0px;
+    
+}
+.user_zyusyo_hensyu {
+    border: 1px solid black;
+    margin: 10px 200px 10px 0px;
+    padding: 1px 40px;
+    text-align: center;
+}
+.user_shiharai {
+    margin: 10px 0px 1px 0px;
+}
+.shiharai {
+    left: 0px;
+}
+.user_kado {
+    text-align: right;
+}
+.user_kurezi {
+    border: 1px solid black;
+   
+    margin: 1px auto;
+    padding: 30px 0px 30px 0px;
+}
+.user_konbini{
+    border: 1px solid black;
+    margin: 10px 0px;
+    padding: 30px 0px;
+}
+.user_kan {
+    display: block;
+    text-align: center;
+   
+}
+.kan {
+    border: 1px solid black;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    margin: 50px 9px;
+}
