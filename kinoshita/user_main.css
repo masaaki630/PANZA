@@ -39,17 +39,22 @@
         font-weight: bold;
         color:#ffffff;
     }
+p{
+    font-size: 40px;
+}
+.yokonarabi{
+    display: flex;
+    overflow: auto;
+}
 
-.checked_items{
+.checked_item{
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
     
 }
-.shohin{
-    display: flex;
-}
-    .checked_items img{
+
+    .checked_img img{
         height: 300px;
         width: 300px;
         margin: 10px;
@@ -57,6 +62,37 @@
         border: 1px solid #000000;
     }
 
-.favorite_items{
+    .checked_shohin_name{
+        margin: 0px 20px;
+    }
+
+    .checked_shohin_price{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 10px;
+    }
+
+.favorite_item{
     font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
+
+    .favorite_img img{
+        height: 300px;
+        width: 300px;
+        margin: 10px;
+        object-fit: cover;
+        border: 1px solid #000000;
+    }
+
+    .favorite_shohin_name{
+        margin: 0px 20px;
+    }
+
+    .favorite_shohin_price{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 10px;
+    }
