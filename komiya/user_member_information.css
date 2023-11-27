@@ -30,12 +30,12 @@
     align-items: center;
 }
 
-.information{
+input{
     border: none; /* ボーダーを削除 */
-  border: 1px solid #000; /* ボーダーが必要な場合は下部にボーダーを追加 */
-  padding: 5px; /* 適切なスペースを確保するためのパディングを追加 */
-  margin: 5px 0; /* 入力フィールド間のスペースを確保するためのマージンを追加 */
-  outline: none; 
+    border: 1px solid #000; /* ボーダーが必要な場合は下部にボーダーを追加 */
+    padding: 5px; /* 適切なスペースを確保するためのパディングを追加 */
+    margin: 5px 0; /* 入力フィールド間のスペースを確保するためのマージンを追加 */
+    outline: none; 
 }
 
 .boxes{
