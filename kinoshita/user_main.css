@@ -1,0 +1,62 @@
+.header{
+    border: 2px solid #000000;
+    text-align: center;
+    height: 120px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 5px;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.hamburger{
+    height: 50px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    display: inline-block;
+    height: 80px;
+    margin : 30px;
+    padding: 23px;
+    width: 43vw;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 0px;
+    }
+    .box p{
+        font-size: 30px;
+        font-weight: bold;
+        color:#ffffff;
+    }
+
+.checked_items{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.shohin{
+    display: flex;
+}
+    .checked_items img{
+        height: 300px;
+        width: 300px;
+        margin: 10px;
+        object-fit: cover;
+        border: 1px solid #000000;
+    }
+
+.favorite_items{
+    font-size: 40px;
+}
