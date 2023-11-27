@@ -9,18 +9,25 @@
 <body>
     <header class="header">
         管理画面
-        <a href="logout.html" value="ログアウト">ログアウト</a>
+        <a href="" value="ログアウト">ログアウト</a>
     </header>
     <main>
         <div class="container">
             <div class="title-box">
                 <p>企業一覧</p>
-                <a href="System_dashboard.html">ダッシュボードへ</a>
+                <a href="">ダッシュボードへ</a>
             </div>
             <hr>
             <table>
                 <tr><th>企業ID</th><th>企業名</th><th>企業住所</th><th>売り上げ</th></tr>
-                <tr><td>1</td><td><a href="System_shohin_all.html">西野株式会社</a></td><td>福岡県福岡市</td><td>5億</td></tr>
+                <?php foreach($comlist as $row): ?>
+                    <tr>
+                        <td><?= $row['company_id']; ?></td>
+                        <td><a href=""><?= $row['company_name']; ?></td>
+                        <td><?= $row['company_place']; ?></td>
+                        <td><?= $row['company_uriage']; ?></td>
+                    </tr>
+                <?php endforeach; ?>
             </table>
             <br>
             <br>

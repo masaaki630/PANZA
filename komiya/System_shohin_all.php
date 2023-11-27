@@ -9,19 +9,29 @@
 <body>
     <div class="header">
         管理画面
-        <a href="logout.html" value="ログアウト">ログアウト</a>
+        <a href="" value="ログアウト">ログアウト</a>
     </div>
     <main>
     <div class="container">
         <div class="title-box">
             <p>企業一覧</p>
-            <a href="System_company_all.html">企業一覧へ</a>
+            <a href="">企業一覧へ</a>
         </div>
         <hr>
         <table>
             <tr><th>商品番号</th><th>商品名</th><th>商品説明</th><th>カテゴリ名</th><th>作成日</th><th>更新日</th><th>売り上げ</th><th>操作</th></tr>
-            <tr><td>1</td><td>犬</td><td>イヌ科</td><td>おおかみ</td><td>2023/11/11</td><td>2023/11/11</td><td>2億</td><td>操作</td></tr>
-            <tr><td>2</td><td>猫</td><td>ネコ科</td><td>ライオン</td><td>2023/11/11</td><td>2023/11/11</td><td>3億</td><td>操作</td></tr>
+            <?php foreach($sholist as $row): ?>
+                <tr>
+                    <td><?= $row['product_id']; ?></td>
+                    <td><?= $row['product_name']; ?></td>
+                    <td><?= $row['product_explanation']; ?></td>
+                    <td><?= $row['category_name']; ?></td>
+                    <td><?= $row['product_created']; ?></td>
+                    <td><?= $row['product_updated']; ?></td>
+                    <td><?= $row['product_uriage']; ?></td>
+                    <td>操作</td>
+                </tr>
+            <?php endforeach; ?>
         </table>     
     </div>
     </main>
