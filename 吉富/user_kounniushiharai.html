@@ -11,33 +11,38 @@
     <iframe src="user_header.html" width="100%" height="75px">
     </iframe> 
 
-    <div class="user_zyusyo">お届け先住所確認
+    <p class="todo">お届け先住所確認</p>
         <div class="zyusyo">住所</div>
             <div class="user_zyusyo_hensyu">
-                <a href="#"><input type="submit" name="user_zyusyo" value="編集"></a> 
+                <a href="#">編集</a> 
             </div>
         </div>
-    </div>
+    
 
 
-    <div class="user_shiharai">お支払い方法選択
-        <div class="user_kurezi">
-            <div class="shiha">
-                <input type="radio"  name="shiharai" value="クレジット">クレジット
+    <p class="todo">お支払い方法選択</p>
+    <form action="#" method="post">
+        <div class="user_credit">
+            <div class="shiharai">
+                <input type="radio"  name="shiharai" value="credit">
+                <label for="credit">クレジットカード</label>
             </div>
             <div class="kado">
-                <a href="#">カード情報入力></a><br>
+                <a href="#">カード情報入力></a>
             </div>
         </div>
         <div class="user_konbini">
-            <input type="radio" class="siharai" name="shiharai" value="着払い">着払い<br>
+            <input type="radio" name="shiharai" value="collect">
+            <label for="collect">着払い</label>
         </div>
         <div class="user_konbini">
-            <input type="radio" class="siharai" name="shiharai" value="コンビニ支払い">コンビニ支払い<br>
+            <input type="radio" name="shiharai" value="convenience">
+            <label for="convenience">コンビニ支払い</label>
         </div>
-    </div>
+    
     <div class="user_kan">
-        <a href="#"><input type="submit" class="kan" name="user_zyusyo" value="購入完了"></a> 
+        <a href="#">購入完了</a> 
     </div>
+    </form>
 </body>
 </html>
