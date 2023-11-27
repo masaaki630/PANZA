@@ -1,4 +1,4 @@
-.header{
+header{
     border: 2px solid #000000;
     text-align: center;
     height: 120px;
@@ -72,6 +72,14 @@ p{
         margin: 0px 10px;
     }
 
+    #heartIcon{
+        transition: color 0.3s ease; /* 色の変化を滑らかにするためのトランジション */
+    }
+
+    #heartIcon:hover {
+        cursor: pointer; /* カーソルをホバー時に変更 */
+    }
+
 .favorite_item{
     font-size: 40px;
     margin-top: 20px;
@@ -96,3 +104,9 @@ p{
         justify-content: space-between;
         margin: 0px 10px;
     }
+
+
+.icon_false{
+    cursor: pointer;
+}
+
