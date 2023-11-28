@@ -7,10 +7,10 @@
     <link href="System_shohin_all.css" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
+    <header>
         管理画面
-        <a href="" value="ログアウト">ログアウト</a>
-    </div>
+        <a href="">ログアウト</a>
+    </header>
     <main>
     <div class="container">
         <div class="title-box">

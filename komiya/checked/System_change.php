@@ -7,14 +7,14 @@
     <link href="System_change.css" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
+    <header>
         管理画面
-        <a href="logout.html" value="ログアウト">ログアウト</a>
-    </div>
+        <a href="">ログアウト</a>
+    </header>
     <main>
         <div class="container">
             <div class="title-box">
-                <a href="System_henkou.html">戻る</a>
+                <a href="">戻る</a>
             </div>
             <hr>
             <div class="check">
@@ -23,11 +23,13 @@
                 </p>
             </div>
             <table>
-                <tr><td>管理者名:</td><td>admin</td></tr>
-                <tr><td>権限レベル：</td><td>高</td></tr>
-                <tr><td>管理者ID</td><td>text</td></tr>
+                <?php foreach($system as $row): ?>
+                    <tr><td>管理者名:</td><td><?= $row['system_name']; ?></td></tr>
+                    <tr><td>権限レベル：</td><td><?= $row['admin_level']; ?></td></tr>
+                    <tr><td>管理者ID</td><td><?= $row['system_login_id']; ?></td></tr>
+                <?php endforeach; ?>
             </table>
-            <a href="System_change_completed.html" class="changebutton">
+            <a href="" class="changebutton">
                 <div class="box">
                     <p>削除</p>
                 </div>
@@ -35,6 +37,6 @@
         </div> 
     </main>
 
-    <div class="footer">ABCC_SD2F_T1_Sep12</div>
+    <footer>ABCC_SD2F_T1_Sep12</footer>
 </body>
 </html>
