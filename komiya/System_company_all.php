@@ -7,9 +7,9 @@
     <link href="System_company_all.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header>
         管理画面
-        <a href="" value="ログアウト">ログアウト</a>
+        <a href="">ログアウト</a>
     </header>
     <main>
         <div class="container">
@@ -71,6 +71,6 @@
     
     
 
-    <footer class="footer">ABCC_SD2F_T1_Sep12</footer>
+    <footer>ABCC_SD2F_T1_Sep12</footer>
 </body>
 </html>

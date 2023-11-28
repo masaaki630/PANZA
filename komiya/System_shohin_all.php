@@ -36,6 +36,6 @@
     </div>
     </main>
 
-    <div class="footer">ABCC_SD2F_T1_Sep12</div>
+    <footer>ABCC_SD2F_T1_Sep12</footer>
 </body>
 </html>
