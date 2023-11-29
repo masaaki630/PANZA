@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>企業側管理画面</title>
+    <link href="./css/destyle.css" rel="stylesheet">
+    <link href="./css/management_image_up.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+</head>
+    <body onload="handleFileUpload()">
+    <header class="header">
+        画像アップロード
+        <a href="management_shohin_toroku.html">＜ 戻る</a>
+    </header>
+        <main>
+            <form action="test.php" method="post" enctype="multipart/form-data">
+                <div class="container">
+                    <div class="upload">
+                        <p>
+                            <input type="file" name="image" class="file-upload">
+                        </p>
+                    </div>
+                        <div class="uploaded-files"></div>
+                        <div class="add">
+                            <button type="submit">アップロード</button>
+                        </div>
+                </div>
+            </form>
+        </main>
+    
+
+        <footer class="footer">ABCC_SD2F_T1_Sep12</footer>
+        <script src="./js/s.js"></script>
+    </body>
+</html>

@@ -39,6 +39,17 @@ tr:last-child th,
 tr:last-child td {
   border-bottom: none;
 }
+input[type="radio"] {
+  /* border: 1px solid black;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  vertical-align: -2px;
+  box-sizing: border-box; */
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
 .button{
   background: white;
   padding:0.3em 0.5em;
