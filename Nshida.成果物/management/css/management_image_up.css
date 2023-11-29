@@ -1,0 +1,96 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 50px;
+}
+
+.container{
+    margin: 0px 5vw;
+}
+
+.file-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 左右にスペースを取る */
+    border: 1px solid #ccc; /* 適宜調整してください */
+    margin-bottom: 8px; /* 適宜調整してください */
+    padding: 8px; /* 任意の内側の余白サイズ */
+}
+
+.file-container .file-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 左右にスペースを取る */
+    flex-grow: 1; /* 親要素に対して可変幅とする */
+}
+
+.file-container .file-info i {
+    margin-right: 8px; /* アイコンと画像名の間の余白（適切な値に調整） */
+}
+
+.file-container span {
+    max-width: 70%; /* 任意の最大幅 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.file-upload{
+    margin-top: 1em;
+}
+
+.add{
+ text-align: right;
+}
+
+.box{
+    display: inline-block;
+    border: 1px solid #000000;
+    margin: 10px;
+    text-align: center;
+    color: #3e3e3b;
+    border-radius: 10px;
+    }
+    .box p{
+        margin: 15px;
+        font-weight: bold;
+    }
+
+table{
+    border-collapse: collapse;
+    margin: 20px 0px;
+    width: 70%;
+}
+
+td{
+    padding: 1em 2em;
+    vertical-align: middle;
+}
+
+/* クラス名 "add" のdiv要素に枠を追加 */
+.add {
+    border: 1.5px solid #000;
+    padding: 10px;
+    width: 120px;
+    margin-left: auto; /* 追加：左側の余白を自動的に設定 */
+    text-align: right;
+    border-radius: 10px;
+}
+
+
+.footer{
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1% 50px;
+    position: fixed;
+    bottom: 0;
+    /* left: 0; */
+    width: 100%;
+}
