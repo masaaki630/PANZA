@@ -11,24 +11,6 @@
   padding-right: 350px;
 
 }
-.shosai {
-  display: flex;
-}
-.image {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  position: relative;
-  top: 50px;
-  left:150px;
-}
-
-.img {
-  background: orange;
-  border: 1px solid #000;
-  width: 200px;
-  height: 200px;
-}
 table {
   border-collapse: separate;
   border-spacing: 0;
@@ -41,9 +23,6 @@ table {
   margin-left:400px;
   width: 700px;
   height: 100px;
-  position: relative;
-  top: 50px;
-  left:0px;
 
 }
 th, td {
@@ -67,11 +46,11 @@ input[type="radio"] {
   border-radius: 50%;
   vertical-align: -2px;
   box-sizing: border-box; */
-  -webkit-appearance: radio; /* WebKitブラウザ用 */
-    -moz-appearance: radio;    /* Mozillaブラウザ用 */
-    appearance: radio;         /* 標準の見た目 */
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
 }
-.button_chose{
+.button{
   background: white;
   padding:0.3em 0.5em;
   border:black 1px solid;
@@ -79,7 +58,7 @@ input[type="radio"] {
   font-size:1em;
   position: relative;
 			top: 50px;
-			left:600px;
+			left:400px;
 }
 .button_signup{
   background: white;
@@ -89,7 +68,7 @@ input[type="radio"] {
   font-size:1em;
   position: relative;
 			top: 50px;
-			left:600px;
+			left:400px;
 }
 .button_edit{
   background: white;
