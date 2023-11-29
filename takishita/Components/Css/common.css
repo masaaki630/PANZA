@@ -11,6 +11,9 @@ header{
   padding: 1% 50px;
 }
 
+main{
+  margin-bottom: 100px;
+}
 
 .container{
   margin: 0px 5vw;
@@ -23,6 +26,11 @@ header{
   font-size: 20px;
 }
 
+
+.login_error_msg{
+  color: red;
+}
+
 footer{
   background-color: lightgrey;
   display: flex;
@@ -31,5 +39,9 @@ footer{
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.hidden{
+  display: none;
 }
 
