@@ -7,10 +7,10 @@
     <link href="System_shohin_detail.css" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
+    <header>
         管理画面
-        <a href="" value="ログアウト">ログアウト</a>
-    </div>
+        <a href="">ログアウト</a>
+    </header>
     <main>
     <div class="container">
         <div class="title-box">
@@ -40,6 +40,6 @@
         </div>
     </div>
     </main>
-    <div class="footer">ABCC_SD2F_T1_Sep12</div>
+    <footer>ABCC_SD2F_T1_Sep12</footer>
 </body>
 </html>

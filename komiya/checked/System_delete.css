@@ -1,4 +1,4 @@
-.header{
+header{
     position: sticky;
     top: 0;
     left: 0;
@@ -63,7 +63,7 @@ td{
         font-weight: bold;
     }
 
-.footer{
+footer{
     background-color: lightgrey;
     display: flex;
     justify-content: flex-end;
