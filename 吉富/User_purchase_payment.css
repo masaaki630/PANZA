@@ -18,10 +18,12 @@
 .todo {
     font-weight: bold;
 }
+
 .zyusyo {
     margin: 20px 0px;
     
 }
+
 .user_zyusyo_hensyu {
     border: 1px solid black;
    display: block;
@@ -29,6 +31,7 @@
    padding: 5px 10px;
     text-align: center;
 }
+
 .user_credit {
   border: 1px solid black;
   display: flex;
@@ -37,21 +40,25 @@
   margin: 5px ;
   padding: 30px 3px;
 }
-.shiharai {
+
+.payment {
     padding: left;
     font-weight: bold;
 }
-.kado {
+
+.card {
     padding: right;
 }
-.user_konbini{
+
+.user_cash{
     border: 1px solid black;
     margin: 5px;
     width: 100%;
     padding: 30px 3px;
     font-weight: bold;    
 }
-.user_kan {
+
+.user_completed {
     display: block;
     text-align: center;
     border: 1px solid black;
