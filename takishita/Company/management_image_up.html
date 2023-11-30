@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>企業側管理画面</title>
+    <link rel="stylesheet" href="../Components/Css/destyle.css">
+    <link rel="stylesheet" href="../Components/Css/common.css">
+    <link rel="stylesheet" href="./css/management_image_up.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script defer src="./js/management_image_up.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1>画像アップロード</h1>
+        <a href="" id="logout">ログアウト</a>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="title-box">
+                <a href="{%%}">＜戻る</a>
+            </div>
+            <hr>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="upload" id="image-upload-container" class="image-upload-container">
+                    <div class="image_container">
+                        <input type="file" name="images[]" accept="image/*" class="images" onchange="image()" class="image-input"><br>
+                        <div class="image-preview">
+                            <img src="" class="image_prev" style="display: none">
+                        </div><br>
+                    </div>
+                </div>
+
+                <div class="add">
+                    <button type="button" id="add-image-button" class="btn">画像の追加</button>
+                    <input type="submit" class="btn" value="アップロード">
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>ABCC_SD2F_T1_Sep12</p>
+    </footer>   
+    
+</body>
+</html>
