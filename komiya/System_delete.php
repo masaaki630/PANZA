@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>システム側削除確認画面</title>
-    <link href="destyle.css" rel="stylesheet">
-    <link href="System_delete.css" rel="stylesheet">
+    <link href="./css/destyle.css" rel="stylesheet">
+    <link href="./css/System_delete.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
     <main>
         <div class="container">
             <div class="title-box">
-                <a href="System_company_all.html">戻る</a>
+                <a href="">戻る</a>
             </div>
             <hr>
             <div class="check">
@@ -23,11 +23,13 @@
                 </p>
             </div>
             <table>
-                <tr><td>管理者名:</td><td>komiya</td></tr>
-                <tr><td>権限レベル：</td><td>低</td></tr>
-                <tr><td>管理者ID</td><td>text</td></tr>
+                <?php foreach($system as $row): ?>
+                    <tr><td>管理者名:</td><td><?= $row['system_name']; ?></td></tr>
+                    <tr><td>権限レベル：</td><td><?= $row['system_level']; ?></td></tr>
+                    <tr><td>管理者ID</td><td><?= $row['system_id']; ?></td></tr>
+                <?php endforeach; ?>
             </table>
-            <a href="System_delete_completed.html" class="deletebutton">
+            <a href="" class="deletebutton">
                 <div class="box">
                     <p>削除</p>
                 </div>

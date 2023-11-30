@@ -18,17 +18,20 @@
 .todo {
     font-weight: bold;
 }
-.zyusyo {
+
+.address{
     margin: 20px 0px;
     
 }
-.user_zyusyo_hensyu {
+
+.user_address_edit {
     border: 1px solid black;
    display: block;
    margin: 0px 200px 20px 0px;
    padding: 5px 10px;
     text-align: center;
 }
+
 .user_credit {
   border: 1px solid black;
   display: flex;
@@ -37,28 +40,10 @@
   margin: 5px ;
   padding: 30px 3px;
 }
-.shiharai {
+
+.payment {
     padding: left;
     font-weight: bold;
-}
-.kado {
-    padding: right;
-}
-.user_konbini{
-    border: 1px solid black;
-    margin: 5px;
-    width: 100%;
-    padding: 30px 3px;
-    font-weight: bold;    
-}
-.user_kan {
-    display: block;
-    text-align: center;
-    border: 1px solid black;
-    padding: 10px 30px;
-    background-color: black;
-    color: white;
-    margin: 20px 80px;
 }
 
 .radio-001 {
@@ -74,7 +59,6 @@
   gap: 0 .5em;
   position: relative;
   cursor: pointer;
- 
 }
 
 .radio-001 label::before,
@@ -102,8 +86,28 @@
   animation: anim-radio-001 .3s linear;
 }
 
-
-
 .radio-001 input {
   display: none;
+}
+
+.card {
+  padding: right;
+}
+
+.user_cash{
+  border: 1px solid black;
+  margin: 5px;
+  width: 100%;
+  padding: 30px 3px;
+  font-weight: bold;    
+}
+
+.user_completed {
+  display: block;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  margin: 20px 80px;
 }
