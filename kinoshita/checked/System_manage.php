@@ -7,7 +7,7 @@
     <link href="System_manage.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header>
         管理画面
         <a href="logout.html" value="ログアウト">ログアウト</a>
     </header>
@@ -25,11 +25,12 @@
         </div>
         <table>
             <tr><th>管理者番号</th><th>管理者名</th><th>権限レベル</th><th>管理者ID</th><th>操作</th></tr>
+            <?php foreach($System as $row): ?>
             <tr>
-                <td>1</td>
-                <td>Sep12Admin</td>
-                <td>高</td>
-                <td>Sep12Admin</td>
+                <td><?= $row['system_id']; ?></td>
+                <td><?= $row['system_name']; ?></td>
+                <td><?= $row['admin_level']; ?></td>
+                <td><?= $row['system_login_id']; ?></td>
                 <td>
                     <a href="System_henkou.html">
                         <div class="box box-update">
@@ -42,8 +43,9 @@
                         </div>
                     </a>
                 </td>
+            <?php endforeach; ?>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td>2</td>
                 <td>YokoKobuchi</td>
                 <td>最高</td>
@@ -78,7 +80,7 @@
                         </div>
                     </a>
                 </td>
-            </tr>
+            </tr> -->
         </table>     
     </div>
     </main>

@@ -10,11 +10,8 @@
 </head>
 <body>
     <header>
-        <header class="header">
-            <h1>管理画面</h1>
-            
-            <a href="index.html" value="ログアウト">ログアウト</a>
-        </header>
+        <h1>管理画面</h1>
+        <a href="index.html" value="ログアウト">ログアウト</a>
     </header>
 
     <main>
