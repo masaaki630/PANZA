@@ -1,0 +1,71 @@
+header{
+    border: 2px solid #000000;
+    text-align: center;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 3px;
+    width: 100vw;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.title{
+    font-size: 20px;
+}
+
+.center{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+}
+
+input{
+    border: none; /* ボーダーを削除 */
+    border: 1px solid #000; /* ボーダーが必要な場合は下部にボーダーを追加 */
+    padding: 5px; /* 適切なスペースを確保するためのパディングを追加 */
+    margin: 5px 0; /* 入力フィールド間のスペースを確保するためのマージンを追加 */
+    outline: none; 
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box{
+    display: inline-block;
+    border: 1px solid #000000;
+    margin: 10px 20px;
+    text-align: center;
+    color: #3e3e3b;
+    border-radius: 10px;
+    }
+    .box p{
+        margin: 15px;
+        font-weight: bold;
+    }
+
+.update{
+    display: inline-block;
+    border: 1px solid #000000;
+    margin: 10px 20px;
+    text-align: center;
+    color: #3e3e3b;
+    border-radius: 10px;
+    }
+    .update input{
+        margin: 15px;
+        font-weight: bold;
+    }

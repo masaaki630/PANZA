@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>システム側商品詳細</title>
-    <link href="destyle.css" rel="stylesheet">
-    <link href="System_shohin_detail.css" rel="stylesheet">
+    <link href="./css/destyle.css" rel="stylesheet">
+    <link href="./css/System_shohin_detail.css" rel="stylesheet">
 </head>
 <body>
     <header>
