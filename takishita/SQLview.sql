@@ -21,7 +21,7 @@ CREATE VIEW Details_List AS
     Product_Sizes AS PS 
   LEFT OUTER JOIN Products AS P 
     ON 
-      P.product_id = PS.product_id
+      P.product_id = PS.product_id 
   LEFT OUTER JOIN Category AS C 
     ON 
       P.category_id = C.category_id
