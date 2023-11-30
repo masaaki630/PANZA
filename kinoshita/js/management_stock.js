@@ -1,18 +1,16 @@
-
-
-let value=document.querySelectorAll(".value");
-
-console.log(value[0].innerHTML);
-
-function increment(){
-  let num=value[0].innerHTML;
-  num=parseInt(num);
-  value[0].innerHTML=num+1;
+function incrementCount(button) {
+  var countSpan = button.parentNode.nextElementSibling; // Get the <span> element
+  var count = parseInt(countSpan.innerText, 10);
+  
+    countSpan.innerText = count + 1; // Increment count
+  
 }
 
-function decrement(){
-  let num=value[0].innerHTML;
-  num=parseInt(num);
-  value[0].innerHTML=num-1;
+function decrementCount(button) {
+  var countSpan = button.parentNode.previousElementSibling; // Get the <span> element
+  var count = parseInt(countSpan.innerText, 10);
+  
+  if (count > 0) {
+    countSpan.innerText = count - 1; // Decrement count
+  }
 }
-

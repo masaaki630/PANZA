@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var heartContainers1 = document.querySelectorAll(".checked_shohin_price .heart-container");
     var heartContainers2 = document.querySelectorAll(".favorite_shohin_price .heart-container");
+    //これ2個目(heartContainers2)がうまくいかない、お気に入り項目のハート調整
 
     heartContainers1.forEach(function (container) {
         container.addEventListener("click", function () {

@@ -8,7 +8,7 @@
     <script defer src="./js/management_stock.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header>
         在庫数管理
         <a href="management_dashboard.html" value="戻る">＜　戻る</a>
     </header>
@@ -29,9 +29,9 @@
                 </td>
                 <td class="count_cell">
                     <div class="stock_count">
-                        <span><input type="button" value="＋"></span>
+                        <span><input type="button" value="＋" onclick="incrementCount(this)"></span>
                         <span>1</span>
-                        <span><input type="button" value="－"></span>
+                        <span><input type="button" value="－" onclick="decrementCount(this)"></span>
                     </div>
                 </td>
             </tr>
@@ -44,9 +44,9 @@
                 </td>
                 <td class="count_cell">
                     <div class="stock_count">
-                        <span><input type="button" value="＋"></span>
+                        <span><input type="button" value="＋" onclick="incrementCount(this)"></span>
                         <span>1</span>
-                        <span><input type="button" value="－"></span>
+                        <span><input type="button" value="－" onclick="decrementCount(this)"></span>
                     </div>
                 </td>
             </tr>
@@ -59,9 +59,9 @@
                 </td>
                 <td class="count_cell">
                     <div class="stock_count">
-                        <span><input type="button" value="＋"></span>
+                        <span><input type="button" value="＋" onclick="incrementCount(this)"></span>
                         <span>1</span>
-                        <span><input type="button" value="－"></span>
+                        <span><input type="button" value="－" onclick="decrementCount(this)"></span>
                     </div>
                 </td>
             </tr>
