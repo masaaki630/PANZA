@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var heartContainers = document.querySelectorAll(".checked_shohin_price .heart-container");
+    var heartContainers1 = document.querySelectorAll(".checked_shohin_price .heart-container");
+    var heartContainers2 = document.querySelectorAll(".favorite_shohin_price .heart-container");
 
-    heartContainers.forEach(function (container) {
+    heartContainers1.forEach(function (container) {
         container.addEventListener("click", function () {
             var heartIcon = container.querySelector("i.fa-heart");
 
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 heartIcon.classList.remove("fa-solid");
                 heartIcon.classList.add("fa-regular");
-                heartIcon.style.color = "";
+                heartIcon.style.color = "black";
             }
         });
     });
