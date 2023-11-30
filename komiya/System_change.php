@@ -23,9 +23,11 @@
                 </p>
             </div>
             <table>
-                <tr><td>管理者名:</td><td>admin</td></tr>
-                <tr><td>権限レベル：</td><td>高</td></tr>
-                <tr><td>管理者ID</td><td>text</td></tr>
+            <?php foreach($system as $row): ?>
+                    <tr><td>管理者名:</td><td><?= $row['system_name']; ?></td></tr>
+                    <tr><td>権限レベル：</td><td><?= $row['system_level']; ?></td></tr>
+                    <tr><td>管理者ID</td><td><?= $row['system_id']; ?></td></tr>
+                <?php endforeach; ?>
             </table>
             <a href="" class="changebutton">
                 <div class="box">
