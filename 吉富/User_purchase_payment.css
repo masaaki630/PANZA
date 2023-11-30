@@ -19,12 +19,12 @@
     font-weight: bold;
 }
 
-.zyusyo {
+.address{
     margin: 20px 0px;
     
 }
 
-.user_zyusyo_hensyu {
+.user_address_edit {
     border: 1px solid black;
    display: block;
    margin: 0px 200px 20px 0px;
@@ -46,28 +46,6 @@
     font-weight: bold;
 }
 
-.card {
-    padding: right;
-}
-
-.user_cash{
-    border: 1px solid black;
-    margin: 5px;
-    width: 100%;
-    padding: 30px 3px;
-    font-weight: bold;    
-}
-
-.user_completed {
-    display: block;
-    text-align: center;
-    border: 1px solid black;
-    padding: 10px 30px;
-    background-color: black;
-    color: white;
-    margin: 20px 80px;
-}
-
 .radio-001 {
   display: flex;
   flex-wrap: wrap;
@@ -81,7 +59,6 @@
   gap: 0 .5em;
   position: relative;
   cursor: pointer;
- 
 }
 
 .radio-001 label::before,
@@ -109,8 +86,28 @@
   animation: anim-radio-001 .3s linear;
 }
 
-
-
 .radio-001 input {
   display: none;
+}
+
+.card {
+  padding: right;
+}
+
+.user_cash{
+  border: 1px solid black;
+  margin: 5px;
+  width: 100%;
+  padding: 30px 3px;
+  font-weight: bold;    
+}
+
+.user_completed {
+  display: block;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  margin: 20px 80px;
 }
