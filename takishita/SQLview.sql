@@ -1,7 +1,7 @@
 -- [システム]
 
 -- <xxxx 商品詳細>
-CREATE VIEW Product_Shosai AS 
+CREATE VIEW Details_List AS 
   SELECT 
     P.company_id,
     PS.product_id,
@@ -13,7 +13,7 @@ CREATE VIEW Product_Shosai AS
     PS.product_size_created,
     PS.product_size_updated,
     PS.purchase_number,
-    PS.purchase_number * PS.price AS shosai_uriage,
+    PS.purchase_number * PS.price AS detail_sales,
     C.category_id,
     C.category_name,
     C.sex_category 
@@ -21,7 +21,7 @@ CREATE VIEW Product_Shosai AS
     Product_Sizes AS PS 
   LEFT OUTER JOIN Products AS P 
     ON 
-      P.product_id = PS.product_id
+      P.product_id = PS.product_id 
   LEFT OUTER JOIN Category AS C 
     ON 
       P.category_id = C.category_id
@@ -34,16 +34,16 @@ CREATE VIEW Product_List AS
     P.product_id,
     P.product_name,
     P.product_explanation,
-    PS.category_name,
+    DL.category_name,
     P.product_created,
     P.product_updated,
-    SUM(shosai_uriage) AS product_uriage 
+    SUM(detail_sales) AS product_sales 
   FROM 
     Products AS P 
   LEFT OUTER JOIN 
-    Product_Shosai AS PS 
+    Details_list AS DL 
   ON 
-    P.product_id = PS.product_id
+    P.product_id = DL.product_id
   GROUP BY 
     P.product_id
 ;
@@ -57,7 +57,7 @@ CREATE VIEW Company_List AS
     C.company_id,
     C.company_name,
     C.company_place,
-    SUM(product_uriage) AS company_uriage 
+    SUM(product_sales) AS company_sales 
   FROM 
     Company AS C
   LEFT OUTER JOIN 
