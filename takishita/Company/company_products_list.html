@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品一覧</title>
+  <link rel="stylesheet" href="../Components/Css/destyle.css">
+  <link rel="stylesheet" href="../Components/Css/common.css">
+  <link rel="stylesheet" href="./Css/company_products.css">
+</head>
+<body>
+  
+  <header>
+    <h1>管理画面</h1>
+    <a href="" id="logout">ログアウト</a>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="title-box">
+        <h1>商品一覧画面</h1>
+        <a href="{%%}">＜戻る</a>
+      </div>
+      <hr>
+      <div>
+        {%sys_file -include_once%}
+      </div>
+      
+      <div class="table_pos">
+        <div>
+          <a href="">
+            <div class="btn create-btn">
+              <p>新商品登録</p>
+            </div>
+          </a>
+        </div>
+        
+        <table>
+          <tr>
+            <th>商品番号</th>
+            <th>商品名</th>
+            <th>商品説明</th>
+            <th>カテゴリ</th>
+            <th>販売数</th>
+            <th>売上</th>
+            <th>登録日</th>
+            <th>最終更新日</th>
+            <th>操作</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><a href="">令和最新版！激安時計の本舗</a></td>
+            <td class="explanation">
+              この中の文章はダミーの文章であり、あえて長文を書いています。<br>
+              一応テストとしての役割を保つために３行書きたいが、<br>
+              文章力がなさ過ぎて困っている。
+            </td>
+            <td>時計</td>
+            <td>500</td>
+            <td>￥5000000</td>
+            <td>2023-12-01</td>
+            <td>2023-12-01</td>
+            <td>
+              <a href="">
+                <div class="btn update-btn">
+                  <p>商品編集</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="btn delete-btn">
+                  <p>商品削除</p>
+                </div>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>ABCC_SD2F_T1_Sep12</p>
+  </footer>
+
+
+</body>
+</html>

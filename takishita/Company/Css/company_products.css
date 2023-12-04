@@ -1,0 +1,49 @@
+
+.btn{
+  display: inline-block;
+  margin: 15px;
+  border: 1px black solid;
+  background-color: rgb(180, 180, 180);
+  text-decoration: none;
+}
+  .create-btn{
+    background-color: aqua;
+  }
+  .update-btn{
+    background-color: rgb(89, 253, 89);
+  }
+  .delete-btn{
+    background-color: red;
+  }
+  .btn p{
+    text-align: center;
+    margin: 6px; 
+  }
+
+
+.table_pos{
+  /* display: inline-block; */
+  margin: 0 auto;
+}
+table{
+  margin: 10px auto;
+}
+
+th,td{
+  padding: 0px 20px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px black solid;
+  vertical-align: middle;
+}
+
+th{
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+  .explanation{
+    text-align: left;
+  }
+  
+
+

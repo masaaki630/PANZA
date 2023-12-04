@@ -11,8 +11,7 @@
 <body>
     <header>
         <h1>管理画面</h1>
-        <a href="index.html" value="ログアウト">ログアウト</a>
-    </header>
+        <a href="{%controller -echo%}logout.php" id="logout">ログアウト</a>    </header>
 
     <main>
         <div class="container">
