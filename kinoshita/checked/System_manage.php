@@ -9,8 +9,7 @@
 <body>
     <header>
         管理画面
-        <a href="logout.html" value="ログアウト">ログアウト</a>
-    </header>
+        <a href="{%controller -echo%}logout.php" id="logout">ログアウト</a>    </header>
     <main>
     <div class="container">
         <div class="title-box">
