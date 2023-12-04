@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商品一覧</title>
+    <link rel="stylesheet" href="../Components/Css/destyle.css" />
+    <link rel="stylesheet" href="../Components/Css/common.css" />
+    <link rel="stylesheet" href="./Css/company_product_manage.css" />
+    <link rel="stylesheet" href="./Js/company_product_manage.js" />
+  </head>
+  <body>
+    <header>
+      <h1>管理画面</h1>
+      <a href="" id="logout">ログアウト</a>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="title-box">
+          <a href="{%%}">＜戻る</a>
+        </div>
+        <hr />
+        <div>{%sys_file -include_once%}</div>
+
+        <form action="" method="post">
+          <div class="section">
+            <div class="image-area">
+              <img src="../../komiya/img/huku1.jpg" alt="test1" />
+              <img src="../../komiya/img/huku2.jpg" alt="test1" />
+              <img src="../../komiya/img/huku1.jpg" alt="test1" />
+              <img src="../../komiya/img/huku1.jpg" alt="test1" />
+              <img src="../../komiya/img/huku1.jpg" alt="test1" />
+              <img src="../../komiya/img/huku1.jpg" alt="test1" />
+            </div>
+            <div class="form-area">
+              <button type="button" id="selectImage">画像を選択</button>
+              <table>
+                <tr>
+                  <th>商品名</th>
+                  <td><input type="text" name="" /></td>
+                </tr>
+                <tr>
+                  <th>商品説明</th>
+                  <td><textarea name="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                  <th>カテゴリ</th>
+                  <td><input type="text" name="" /></td>
+                </tr>
+                <tr>
+                  <th>対象性別</th>
+                  <td>
+                    <select name="">
+                      <option value="">男性</option>
+                      <option value="">女性</option>
+                      <option value="">子供</option>
+                      <option value="">LGBT</option>
+                      <option value="">その他</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+              <input type="submit" value="登録">
+            </div>
+          </div>
+        </form>
+        <div id="imageModal" style="display:none;">
+          <!-- ここに画像一覧を表示 -->
+          <!-- 例: <img src="image1.jpg" onclick="selectImage('image1.jpg')"> -->
+      </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>ABCC_SD2F_T1_Sep12</p>
+    </footer>
+  </body>
+</html>

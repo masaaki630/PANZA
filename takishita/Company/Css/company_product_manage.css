@@ -1,0 +1,74 @@
+
+.section{
+  display: flex;
+  margin: 5vh 0;
+}
+
+.image-area{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 30%;
+  height: 60vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  /* background-color: aqua; */
+}
+
+  .image-area img{
+    padding: 12px;
+    margin: 12px;
+    border: 1px black solid;
+  }
+
+
+.form-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: 70%;
+
+  /* background-color: green; */
+}
+
+  table{
+    width: 78%;
+    margin: 0 auto;
+  }
+  th,td{
+    padding: 9px 20px;
+    text-align: center;
+    border: 1px black solid;
+    vertical-align: middle;
+  }
+  th{
+    width: 30%;
+  }
+  td{
+    width: 70%;
+    cursor: pointer;
+  }
+    input,textarea{
+      width: 100%;
+    }
+      input:focus,textarea:focus,select:focus{
+        outline: none;
+      }
+    td select{
+      width: 100%;
+      cursor: inherit;
+    }
+
+  input[type="submit"],button{
+
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    margin: 12px auto;
+    width: 18%;
+    border: 1px black solid;
+  }
+
