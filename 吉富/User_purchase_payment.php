@@ -9,14 +9,25 @@
 </head>
 <body>
     <header>
-        <span class="title">PANZA</span>
+        <span class="System_name">PANZA</span>
     </header> 
+    
     <p class="todo">お届け先住所確認</p>
-        <div class="address">住所</div>
-            <div class="user_address_edit">
-                <a href="#">編集</a> 
-            </div>
-        </div>
+
+    <?php foreach($member_information as $row): ?>
+                
+                    <p>〒<?= $row['post_code']; ?></p>
+                    <p><?= $row['prefectures']; ?>
+                    <?= $row['city']; ?>
+                    <?= $row['street_address']; ?></p>
+                    <p><?= $row['building_name']; ?></p>
+                
+    <?php endforeach; ?>
+        
+        <a href="">
+            <div class="user_address_edit">編集</div>
+        </a>
+
     <p class="todo">お支払い方法選択</p>
     <form action="#" method="post">
         <fieldset class="radio-001">
