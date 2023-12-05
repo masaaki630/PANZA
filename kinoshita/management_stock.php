@@ -10,7 +10,7 @@
 <body>
     <header>
         在庫数管理
-        <a href="" value="戻る">＜　戻る</a>
+        <a href="{%controller -echo%}management_dashboard_show.php" value="戻る">＜　戻る</a>
     </header>
     <main>
     <div class="container" id="app">
@@ -67,7 +67,8 @@
             </tr>
         </table> 
         <div class="update">
-            <a href="">   
+            <a href="{%controller -echo%}_show.php">
+                  <!-- ここの遷移先不明、在庫数更新してダッシュボードに戻る？ -->
                 <div class="box">
                     <p>在庫数更新</p>
                 </div>
