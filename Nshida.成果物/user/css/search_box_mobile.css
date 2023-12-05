@@ -1,0 +1,8 @@
+body {
+  display: block; /* フレックスを解除してブロックレベル要素に変更 */
+}
+
+.search-box {
+  width: 80%; /* 画面幅の80%に調整 */
+  margin-bottom: 10px;
+}
