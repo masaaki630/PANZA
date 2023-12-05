@@ -44,7 +44,7 @@ td{
     vertical-align: middle;
 }
 
-.footer{
+footer{
     background-color: lightgrey;
     display: flex;
     justify-content: flex-end;

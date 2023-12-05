@@ -68,7 +68,7 @@ td{
     justify-content: space-around;
 }
   
-.footer{
+footer{
     background-color: lightgrey;
     display: flex;
     justify-content: flex-end;
