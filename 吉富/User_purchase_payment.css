@@ -25,11 +25,12 @@
 }
 
 .user_address_edit {
-    border: 1px solid black;
+   border: 1px solid black;
    display: block;
-   margin: 0px 200px 20px 0px;
+   margin: 0px 50px 20px 0px;
    padding: 5px 10px;
-    text-align: center;
+   text-align: center;
+   width: 150px;
 }
 
 .user_credit {
