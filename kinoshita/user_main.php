@@ -18,12 +18,14 @@
             <span></span>
         </div>
         <div class="boxes">
-            <a href="">
+            <a href="{%controller -echo%}brand_search_show.php">
+                <!-- URL仮、ファイルがない -->
                 <div class="box">
                     <p>ブランドから探す</p>
                 </div>
             </a>
-            <a href="">
+            <a href="{%controller -echo%}category_search_show.php">
+                <!-- URL仮、ファイルがない -->
                 <div class="box">
                     <p>カテゴリから探す</p>
                 </div>
@@ -32,76 +34,41 @@
 
         <p>チェックしたアイテム</p>
         <div class="yokonarabi">
-            <div class="checked_item"> <!-- 商品一個を表示するdiv -->
-                <div class="checked_img">
-                    <a href="">
-                        <img src="">
-                    </a>
+            <?php foreach($shohin as $row): ?>
+                <div class="checked_item"> <!-- 商品一個を表示するdiv -->
+                    <div class="checked_img">
+                        <a href="{%controller -echo%}user_shohin_show.php">
+                            <img src= <?= $row['product_image_path']; ?>>
+                        </a>
+                    </div>
+                    <div class="checked_shohin_name">
+                        <a href="{%controller -echo%}user_shohin_show.php">
+                            <span>bland</span>
+                        </a>
+                    </div>
+                    <div class="checked_shohin_price">
+                        <span>￥10,000</span>
+                        <span class="heart-container">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                    </div>
                 </div>
-                <div class="checked_shohin_name">
-                    <a href="">
-                        <span>bland</span>
-                    </a>
-                </div>
-                <div class="checked_shohin_price">
-                    <span>￥10,000</span>
-                    <span class="heart-container">
-                        <i class="fa-regular fa-heart"></i>
-                    </span>
-                </div>
-            </div>
-
-            <div class="checked_item">
-                <div class="checked_img">
-                    <a href="">
-                        <img src="">
-                    </a>
-                </div>
-                <div class="checked_shohin_name">
-                    <a href="">
-                        <span>bland</span>
-                    </a>
-                </div>
-                <div class="checked_shohin_price">
-                    <span>￥10,000</span>
-                    <span class="heart-container">
-                        <i class="fa-regular fa-heart"></i>
-                    </span>
-                </div>
-            </div>
-
-            <div class="checked_item">
-                <div class="checked_img">
-                    <a href="">
-                        <img src="">
-                    </a>
-                </div>
-                <div class="checked_shohin_name">
-                    <a href="">
-                        <span>bland</span>
-                    </a>
-                </div>
-                <div class="checked_shohin_price">
-                    <span>￥10,000</span>
-                    <span class="heart-container">
-                        <i class="fa-regular fa-heart"></i>
-                    </span>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
 
 
 
-            <p>お気に入りのアイテム</p>
-            <div class="yokonarabi">
+        <p>お気に入りのアイテム</p>
+        <div class="yokonarabi">
+            <?php foreach($shohin as $row): ?>
                 <div class="favorite_item"> <!-- 商品一個を表示するdiv -->
                     <div class="favorite_img">
-                        <a href="">
-                            <img src="">
+                        <a href="{%controller -echo%}user_shohin_show.php">
+                            <img src= <?= $row['product_image_path']; ?> >
                         </a>
                     </div>
                     <div class="favorite_shohin_name">
-                        <a href="">
+                        <a href="{%controller -echo%}user_shohin_show.php">
                             <span>bland</span>
                         </a>
                     </div>
@@ -112,71 +79,35 @@
                         </span>
                     </div>
                 </div>
-
-                <div class="favorite_item">
-                    <div class="favorite_img">
-                        <a href="">
-                            <img src="">
-                        </a>
-                    </div>
-                    <div class="favorite_shohin_name">
-                        <a href="">
-                            <span>bland</span>
-                        </a>
-                    </div>
-                    <div class="favorite_shohin_price">
-                        <span>￥10,000</span>
-                        <span class="heart-container">
-                            <i class="fa-regular fa-heart"></i>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="favorite_item">
-                    <div class="checked_img">
-                        <a href="">
-                            <img src="">
-                        </a>
-                    </div>
-                    <div class="favorite_shohin_name">
-                        <a href="">
-                            <span>bland</span>
-                        </a>
-                    </div>
-                    <div class="favorite_shohin_price">
-                        <span>￥10,000</span>
-                        <span class="heart-container">
-                            <i class="fa-regular fa-heart"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
+        
         
         <!-- ハンバーガーメニューの中身 -->
         <div class="slide_menu hidden">
             <h1>メニュー画面</h1>
-            <a href="">
+            <a href="{%controller -echo%}user_favorite_show.php">
                 <div class="user_dashboard">
                     <p>お気に入り商品一覧</p>
                 </div>
             </a>
-            <a href="">
+            <a href="{%controller -echo%}user_cart_show.php">
                 <div class="user_dashboard">
                     <p>カートを見る</p>
                 </div>
             </a>
-            <a href="">
+            <a href="{%controller -echo%}user_member_information_show.php">
                 <div class="user_dashboard">
                     <p>会員画面</p>
                 </div>
             </a>
-            <a href="">
+            <a href="{%controller -echo%}user_main_show.php">
+                <!-- ログアウト後はメインページに飛ぶように書いたけど違ったら変更お願いします -->
                 <div class="user_dashboard">
                     <p>ログアウト</p>
                 </div>
             </a>
-            <a href="">
+            <a href="{%controller -echo%}user_main_show.php">
                 <div class="user_dashboard">
                     <p>ホームに戻る</p>
                 </div>

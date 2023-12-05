@@ -33,8 +33,7 @@
             </tr>
         </table> 
         <div class="add">
-            <a href="System_(change?delete?signup?)_completed_show.php">
-                <!-- どんな感じで遷移先分けるか不明だからここ修正お願いします -->
+            <a href="{%controller -echo%}management_completed_show.php">
                 <div class="box">
                     <p>アップロード</p>
                 </div>
