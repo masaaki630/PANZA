@@ -11,7 +11,7 @@
 <body>
     <header>
         <p class="header_name">商品登録</p>
-        <a href="" class="back_link" id="back">≪ 戻る</a> 
+        <a href="management_signup_show.php" class="back_link">≪ 戻る</a> 
     </header>
     <hr>
 
@@ -32,7 +32,7 @@
                 <?php endforeach; ?>
             </table>
         </div>
-        <a class="button_signup" href="">登録</a>
+        <a class="button_signup" href="management_completed_show.php">登録</a>
     </main>
     
 </body>

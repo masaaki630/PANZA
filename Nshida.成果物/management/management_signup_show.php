@@ -11,21 +11,20 @@
 <body>
     <header>
         <p class="header_name">商品一覧</p>
-        <a href="back" class="back_link" id="back">≪ 戻る</a> 
+        <a href="management_dashboard_show.php" class="back_link">≪ 戻る</a> 
     </header>
     <hr>
 
     <main>  
-        <a class="button" href="#">すべて選択</a>
         <table>
             <?php foreach($product_list as $row): ?>
                 <tr><th><?= $row['product_name']; ?></th><th><?= $row['price']; ?></th><th><input type="radio" name="select"></th></tr>
             <?php endforeach; ?>
             
         </table>
-        <a class="button_signup" href="management_product_signup.html">商品登録</a>
-        <a class="button_edit" href="#">商品編集</a>
-        <a class="button_delete" href="#">商品削除</a>
+        <a class="button_signup" href="management_product_signup_show.php">商品登録</a>
+        <a class="button_edit" href="management_product_signup_show.php">商品編集</a>
+        <a class="button_delete" href="management_completed_show.php">商品削除</a>
 
     </main>
     
