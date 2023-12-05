@@ -15,7 +15,7 @@
         <div class="container">
             <div class="title-box">
                 <p>企業一覧</p>
-                <a href="System_dashboard.php">ダッシュボードへ</a>
+                <a href="{%controller -echo%}System_dashboard_show.php">ダッシュボードへ</a>
             </div>
             <hr>
             <table>

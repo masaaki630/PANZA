@@ -15,7 +15,7 @@
     <div class="container">
         <div class="title-box">
             <p>商品詳細</p>
-            <a href="System_shohin_detail.php">商品一覧へ</a>
+            <a href="{%controller -echo%}System_shohin_detail_show.php">商品一覧へ</a>
         </div>
         <hr>
         <table>
