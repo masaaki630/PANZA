@@ -11,6 +11,7 @@ body {
   
   .search-container {
     text-align: center;
+    vertical-align: middle;
   }
   
   .search-box {
