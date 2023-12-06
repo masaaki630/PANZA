@@ -33,7 +33,7 @@
             </tr>
         </table> 
         <div class="add">
-            <a href="">   
+            <a href="{%controller -echo%}management_completed_show.php">
                 <div class="box">
                     <p>アップロード</p>
                 </div>
@@ -42,6 +42,6 @@
     </div>
     </main>
 
-    <footer class="footer">ABCC_SD2F_T1_Sep12</footer>
+    <footer>ABCC_SD2F_T1_Sep12</footer>
 </body>
 </html>

@@ -15,7 +15,7 @@
     <div class="container">
         <div class="title-box">
             <p>企業一覧</p>
-            <a href="">企業一覧へ</a>
+            <a href="{%controller -echo%}System_company_all_show.php">企業一覧へ</a>
         </div>
         <hr>
         <table>

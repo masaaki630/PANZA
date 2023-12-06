@@ -15,7 +15,7 @@
         <div class="container">
             <div class="title-box">
                 <p>企業一覧</p>
-                <a href="">ダッシュボードへ</a>
+                <a href="{%controller -echo%}System_dashboard_show.php">ダッシュボードへ</a>
             </div>
             <hr>
             <table>
@@ -29,43 +29,6 @@
                     </tr>
                 <?php endforeach; ?>
             </table>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
         </div>
     </main>
     
