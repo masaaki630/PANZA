@@ -1,0 +1,133 @@
+[ユーザページ]
+<お気に入り商品一覧、表示>
+SELECT 
+	product_name, 
+	company_name, 
+	price, 
+	delete_flag, 
+	product_image_path 
+FROM 
+	Favorite_Products_View
+WHERE 
+	member_id = ? 
+	AND 
+	delete_flag = false;
+
+
+<カート画面、表示>
+SELECT 
+	product_name, 
+	company_name, 
+	price, 
+	amount, 
+	product_image_path
+FROM 
+	Product_Cart_View
+WHERE 
+	member_id = ? 
+	AND 
+	amount > 0;
+
+
+<カート画面、数量変更(+)>
+UPDATE 
+	Product_Cart
+SET 
+	amount = amount + 1
+WHERE 
+	member_id = ?; 
+
+
+<カート画面、数量変更(-)>
+UPDATE 
+	Product_Cart
+SET 
+	amount = amount - 1
+WHERE 
+	member_id = ?;
+
+
+<メインページ、表示>(未完)
+SELECT 
+	product_image_path, 
+	company_name, 
+	price, 
+	delete_flag
+FROM 
+	Main_Page
+WHERE 
+	delete_flag = false;
+
+
+<会員情報画面、表示>
+SELECT 
+	member_last_name, 
+	member_first_name, 
+	phone, 
+	birth, 
+	post_code, 
+	prefectures, 
+	city,
+	street_address, 
+	building_name, 
+	member_email, 
+	member_id, 
+	member_password
+FROM 
+	Member_Information
+WHERE 
+	member_id = ?;
+
+
+<購入情報確認・支払方法選択画面、表示>
+SELECT 
+	post_code, 
+	prefectures, 
+	city, 
+	street_address, 
+	building_name
+FROM 
+	Member_Information
+WHERE 
+	member_id = ?;
+
+
+<商品画面、表示>
+SELECT 
+	product_image_pass, 
+	company_name, 
+	product_name, 
+	price, 
+	product_explanation,
+	delete_flag, 
+FROM 
+	Product_Page
+WHERE 
+	product_id = ?;
+
+
+{ユーザ共通sql}
+<お気に入り追加>
+UPDATE 
+	Product_Favorite
+SET 
+	delete_flag = false;
+WHERE 
+	member_id = ? 
+	AND 
+	product_id = ? 
+	AND 
+	delete_flag = true;
+
+
+<お気に入り解除>
+UPDATE 
+	Product_Favorite
+SET 
+	delete_flag = true
+WHERE 
+	member_id = ? 
+	AND 
+	product_id = ? 
+	AND 
+	delete_flag = false;
