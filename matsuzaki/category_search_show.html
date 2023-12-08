@@ -13,16 +13,18 @@
     </header>
     <main>
         <form method="post" action="">
-            <label for="category">カテゴリー選択：</label>
-            <select name="category" id="category">
-              <!-- カテゴリーの選択肢を表示 -->
-              <!-- <?php foreach($category as $row): ?> -->
-                <option value="electronics">Tシャツ</option>
-                <option value="electronics">ズボン</option>
-                <option value="electronics">キャップ</option>
-                    <!-- <?= $row['category_name']; ?> -->
-              <!-- <?php endforeach; ?> -->
-            </select>
+            <p class="">カテゴリー選択</p>
+            <div class="">
+                <!-- <?php foreach($category as $row): ?> -->
+                <div class="">
+                    <form action="<?= $row['category_id']; ?>">
+                        <p>Tシャツ</p>
+                        <!-- <p><?= $row['category_name']; ?></p> -->
+                    </form>
+                </div>
+                <!-- <?php endforeach; ?> -->
+                
+            </div>
             <button type="submit">検索</button>
         </form>
                 <div class="inputInfomation button-container">
