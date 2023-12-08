@@ -34,12 +34,12 @@ input{
     margin: 15px;
 }
 
-.boxes{
+.boxs{
     display: flex;
     justify-content: center;
 }
 
-.box{
+/* .box{
     display: inline-block;
     border: 1px solid #000000;
     margin: 20px 20px;
@@ -49,5 +49,27 @@ input{
     }
     .box p{
         margin: 15px;
+        font-weight: bold;
+    } */
+
+hr{
+    padding-bottom: 5%;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    display: inline-block;
+    border: 1px solid #000000;
+    margin: 20px 70px;
+    text-align: center;
+    color: #3e3e3b;
+    border-radius: 10px;
+    }
+    .box p{
+        margin: 15px 50px;
         font-weight: bold;
     }
