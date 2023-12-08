@@ -13,6 +13,7 @@
     </header>
     <main>
         <div class="container">
+        <form action="{%controller -echo%}user_main_show.php">
             <div class="user_mail">
                 <p>メールアドレス</p>
                 <input type="text" name="member_email">
@@ -20,20 +21,21 @@
             <div class="user_pass">
                 <p>パスワード</p>
                 <input type="text" name="member_password">
-            </div>
-            <div class="boxes">
-                <a href="{%controller -echo%}user_main_show.php">
+                <div class="boxs">
                     <div class="box">
                         <p>ログイン</p>
                     </div>
-                </a>
+                </div>
+        </form>
+        <hr>
+            <div class="boxs">
                 <a href="{%controller -echo%}user_MemberRegistration_show.php">
+                    <p>登録完了してない方はこちら</p>
                     <div class="box">
                         <p>新規登録</p>
                     </div>
                 </a>
             </div>
-        </div>
     </main>
 </body>
 </html>
