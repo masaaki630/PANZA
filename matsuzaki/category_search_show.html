@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品カテゴリ検索画面</title>
+    <link href="./css/destyle.css" rel="stylesheet">
+    <link href="./css/category_seach_show.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="title">PANZA</span>
+    </header>
+    <main>
+        <form method="post" action="">
+            <label for="category">カテゴリー選択：</label>
+            <select name="category" id="category">
+              <!-- カテゴリーの選択肢を表示 -->
+              <!-- <?php foreach($category as $row): ?> -->
+                <option value="electronics">Tシャツ</option>
+                <option value="electronics">ズボン</option>
+                <option value="electronics">キャップ</option>
+                    <!-- <?= $row['category_name']; ?> -->
+              <!-- <?php endforeach; ?> -->
+            </select>
+            <button type="submit">検索</button>
+        </form>
+                <div class="inputInfomation button-container">
+                    <a href="{%controller -echo%}user_main_show.php" class="button">
+                      <p>戻る</p>
+                    </a>
+                </div>
+        
+    </main>
+</body>
+</html>
