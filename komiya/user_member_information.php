@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>会員情報画面</title>
-    <link href="./css/destyle.css" rel="stylesheet">
-    <link href="./css/user_member_information.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/destyle.css">
+    <link rel="stylesheet" href="./Css/user_member_information.css">
 </head>
 <body>
     <header>
