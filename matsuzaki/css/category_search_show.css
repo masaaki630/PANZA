@@ -8,7 +8,7 @@ header{
     font-weight: bold;
 }
 
-.ca{
+.select{
     padding: 10px 10px; 
     font-weight: bold;
     text-align: center;
@@ -30,23 +30,23 @@ header{
         /* font-weight: bold; */
     }
 
-.full-width-table {
+.category_all{
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 35px;
 }
 
-.full-width-row {
+.category_vertical {
     display: table-row;
 }
 
-.full-width-cell {
+.category_width{
     display: table-cell;
     border: 1px solid #ccc;
     padding: 25px;
 }
 
-.full-width-link {
+.category_link{
     display: block;
     width: 100%;
     text-decoration: none;

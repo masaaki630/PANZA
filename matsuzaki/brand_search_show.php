@@ -12,12 +12,12 @@
         <span class="title">PANZA</span>
     </header>
     <main>
-            <p class="ca">ブランド選択</p>
-                <table class="full-width-table">
+            <p class="select">ブランド選択</p>
+                <table class="brand_all">
                     <?php foreach($brand as $row): ?>
-                    <tr class="full-width-row">
-                        <td class="full-width-cell">
-                            <a href="{%controller -echo}user_search_product_show.php" class="full-width-link"><input type="hidden" name="<?= $row['company_id']; ?>"><?= $row['company_name']; ?></a>
+                    <tr class="brand_vertical">
+                        <td class="brand_width">
+                            <a href="{%controller -echo}user_search_product_show.php" class="brand_link"><input type="hidden" name="<?= $row['company_id']; ?>"><?= $row['company_name']; ?></a>
                         </td>
                     </tr>
                     <?php endforeach; ?>

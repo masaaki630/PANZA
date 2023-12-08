@@ -12,12 +12,12 @@
         <span class="title">PANZA</span>
     </header>
     <main>
-            <p class="ca">カテゴリー選択</p>
-                <table class="full-width-table">
+            <p class="select">カテゴリー選択</p>
+                <table class="category_all">
                     <?php foreach($category as $row): ?>
-                    <tr class="full-width-row">
-                        <td class="full-width-cell">
-                            <a href="{%controller -echo}user_search_product_show.php" class="full-width-link"><input type="hidden" name="<?= $row['category_id']; ?>"><?= $row['category_name']; ?></a>
+                    <tr class="category_vertical">
+                        <td class="category_width">
+                            <a href="{%controller -echo}user_search_product_show.php" class="category_link"><input type="hidden" name="<?= $row['category_id']; ?>"><?= $row['category_name']; ?></a>
                         </td>
                     </tr>
                     <?php endforeach; ?>
