@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>システム側削除確認画面</title>
-    <link href="destyle.css" rel="stylesheet">
-    <link href="System_delete.css" rel="stylesheet">
+    <link rel="stylesheet" href="destyle.css">
+    <link rel="stylesheet" href="System_delete.css">
 </head>
 <body>
     <header>
